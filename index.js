@@ -14,8 +14,7 @@ exports.handler = (req, resp, context) => {
     headers: req.headers,
     method: req.method,
     requestURI: req.url,
-    clientIP: req.clientIP,
-    version: VERSION,
+    clientIP: req.clientIP,   version: VERSION,
     buildVersion: BUILD_TIME,
   };
 
