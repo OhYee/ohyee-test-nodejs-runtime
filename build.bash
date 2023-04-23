@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+r="$((($RANDOM * $RANDOM) % 5 ))"
+echo $r
+
+if [ "$r" -ne "0" ] ; then echo "error!" && exit; fi
+
 BUILD_TIME=$(date '+%Y-%m-%d %H:%M:%S')
 
 mkdir -p build

@@ -3,7 +3,7 @@ var getFormBody = require('body/form');
 var body = require('body');
 
 const BUILD_TIME = '{BUILD_TIME}';
-const VERSION = '1.0.29'; 
+const VERSION = '1.0.30'; 
 
 exports.handler = (req, resp, context) => {
   console.log('hello world');
@@ -14,8 +14,7 @@ exports.handler = (req, resp, context) => {
     headers: req.headers,
     method: req.method,
     requestURI: req.url,
-    clientIP: req.clientIP,
-    version: VERSION,
+    clientIP: req.clientIP,   version: VERSION,
     buildVersion: BUILD_TIME,
   };
 
